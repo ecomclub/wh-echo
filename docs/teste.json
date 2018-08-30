@@ -1,0 +1,29 @@
+{
+    "headers": {
+        "HTTP_HOST": [
+            "localhost:8888"
+        ],
+        "HTTP_USER_AGENT": [
+            "insomnia\/6.0.2"
+        ],
+        "HTTP_COOKIE": [
+            "PHPSESSID=3ma0lgfn7l78aubpjjp03715tq"
+        ],
+        "HTTP_CONTENT_TYPE": [
+            "application\/x-www-form-urlencoded"
+        ],
+        "HTTP_ACCEPT": [
+            "*\/*"
+        ],
+        "CONTENT_LENGTH": [
+            "26"
+        ]
+    },
+    "body": {
+        "teste": "teste1",
+        "teste1": "teste2"
+    },
+    "id": "teste",
+    "content": "dsasd",
+    "path": "teste\/dsasd"
+}
