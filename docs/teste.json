@@ -19,6 +19,7 @@
             "26"
         ]
     },
+    "method": "OPTIONS",
     "body": {
         "teste": "teste1",
         "teste1": "teste2"

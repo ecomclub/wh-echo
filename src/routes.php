@@ -3,13 +3,15 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
 $rotas = function () use ($tokenIsValid) {
-    $this->post('[/{token}/{id}[/{content}]]', function(Request $request, Response $response, array $args){
+    $this->any('[/{token}/{id}[/{content}]]', function(Request $request, Response $response, array $args){
         
         $headers = $request->getHeaders();
         $body = $request->getParsedBody();
+        $method = $request->getMethod();
 
         $req = array(
             'headers' => $headers,
+            'method' => $method,
             'body' => $body,
             'id'    => $args['id'],
             'content' => $args['content'],
