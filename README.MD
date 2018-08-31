@@ -1,18 +1,21 @@
 ## Webhook echo
 A simple app to receive request from webhooks.
 You can use any http method to do test; GET, POST, PUT, OPTION or DELETE.
-A json like response will be send and a file `.json` will be create on dir `/doc`.
+For each valid request, a JSON file (named `request_id.json`)  will be created on dir `/doc`,
+these files can be seen directly from browser to check the webhook request content.
 
 ## Deploy to:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ecomclub/wh-echo)
 
 ## Using
-After deploy on heroku or on your on host, you need to set APP_TOKEN on your `.env` file.
-This token need to be on every request.
+After deploying on heroku or any host, you have to set APP_TOKEN on your `.env` file.
+This token must be on URL of every request.
 
 ### Endpoint
 
-When you finish deploy you will be able to make request on endpoint `my-webhook-echo.herokuapp.com/wh/{token}/{request_id}/{any_content}`
+When you finish deploy you will be able to make request on endpoint:
+
+`http://my-webhook-echo.herokuapp.com/wh/{token}/{request_id}/{any_content}`
 
 ```
 {
